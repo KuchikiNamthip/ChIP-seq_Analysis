@@ -14,4 +14,7 @@ wget -L https://www.encodeproject.org/files/ENCFF356LFX/@@download/ENCFF356LFX.b
     gunzip ENCFF356LFX.bed.gz && \
     mv ENCFF356LFX.bed hg38-blacklist.v3.bed`
 ```
-##
+## NOTE
+> [Pipelines and QC: When and how do you remove blacklisted regions? What program do you use?](https://bioinformatics.ccr.cancer.gov/btep/questions/pipelines-and-qc-when-and-how-do-you-remove-blacklisted-regions-what-program-do-you-use)
+> --------------------
+> There is no single tool to remove blacklisted regions. Genomic coordinates of reference-specific blacklisted regions are used from reliable resources to extract these blacklisted sequences from the genome. A BWA alignment index is created for these blacklisted region sequences and reads are aligned to this index using BWA. Any reads which do align are assumed to be originating from the blacklisted regions and excluded from downstream analysis. The last couple steps are run using SAMTOOLS and BEDTOOLS. - answered by Tovah Markowitz, Paul Schaughency, Vishal Koparde. 

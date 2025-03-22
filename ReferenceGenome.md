@@ -75,19 +75,26 @@ These annotations can be used with tools like HOMER, BEDTools, or ChIPseeker to 
 
 # NOTE
 
-## 1. Primary Assembly (Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz):
-    - Contains the main chromosomal sequences (chr1-22, X, Y, MT)
-    - Includes the primary chromosome sequences only without alternative contigs
-    - Represents the "standard" human genome reference
-    - Smaller file size and more manageable for many analyses
-    - Recommended for most standard analyses including ChIP-seq, RNA-seq
+## Different between full GRCh38 and Primary Assembly
 
-## 2. Full hg38/GRCh38 Assembly:
-    - Contains the primary assembly PLUS:
-        - Alternative haplotypes (alt contigs)
-        - Unplaced sequences
-        - Unlocalized sequences
-        - Patches (fix and novel)
-    - Much larger file size
-    - Can complicate alignments as reads might map to multiple similar regions
-    - Can be useful for specialized analyses focusing on regions with multiple representations
+    1. Primary Assembly (Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz):
+        - Contains the main chromosomal sequences (chr1-22, X, Y, MT)
+        - Includes the primary chromosome sequences only without alternative contigs
+        - Represents the "standard" human genome reference
+        - Smaller file size and more manageable for many analyses
+        - Recommended for most standard analyses including ChIP-seq, RNA-seq
+
+    2. Full hg38/GRCh38 Assembly:
+        - Contains the primary assembly PLUS:
+            - Alternative haplotypes (alt contigs)
+            - Unplaced sequences
+            - Unlocalized sequences
+            - Patches (fix and novel)
+        - Much larger file size
+        - Can complicate alignments as reads might map to multiple similar regions
+        - Can be useful for specialized analyses focusing on regions with multiple representations
+
+## Note reference genome selection
+    - ["Which human reference genome to use?" by HengLi](https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use)
+    - from ENCODE pipeline: `https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz`
+    - [Different between each source of reference genome by Translational Genomics Research Institute](https://github.com/tgen/jetstream_resources/blob/main/genome_reference_notes.md)
