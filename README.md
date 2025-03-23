@@ -1,5 +1,5 @@
 # ChIP-seq_Analysis
-my personal note for ChIP-seq analysis
+My personal note for ChIP-seq analysis
 
 ## Main Chip-seq analysis guideline
 - [ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia (2012)](https://genome.cshlp.org/content/22/9/1813.full.html)
