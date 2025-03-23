@@ -1,2 +1,4 @@
 # ANALYSIS GUIDELINE
-[ENCODE4 ChIP-seq Data Standards and Processing Pipeline (version 2.2.2)](https://github.com/ENCODE-DCC/chip-seq-pipeline2?tab=readme-ov-file)
+- [ENCODE4 ChIP-seq Data Standards and Processing Pipeline (version 2.2.2)](https://github.com/ENCODE-DCC/chip-seq-pipeline2?tab=readme-ov-file)
+    - [This is the analysis pipeline overview and code](https://docs.google.com/document/d/1lG_Rd7fnYgRpSIqrIfuVlAz2dW1VaSQThzk836Db99c/edit?tab=t.0#heading=h.9ecc41kilcvq)
+- [A beginner’s guide to ChIP-seq analysis](https://portlandpress.com/biochemist/article/47/1/21/235716/A-beginner-s-guide-to-ChIP-seq-analysis#:~:text=Chromatin%20immunoprecipitation%20followed%20by%20sequencing,specific%20proteins%20or%20histone%20modifications&text=Various%20plots%20are%20used%20for,and%20distribution%20can%20be%20investigated.)
